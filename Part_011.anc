@@ -1,0 +1,36 @@
+Operation List    POST: Alpha Standard 3 Ax Router
+--------------------------------------------------
+OP 1   FINISH PASS   TOOL 1   FLAT - 2MM
+       EFFECTIVE DIAMETER 2
+       Feed Distance: 2628   Time for OP 1: 0m 16s
+--------------------------------------------------
+Total Feed Distance ......................... 2628
+Tool Change Time .......................... 0m 10s
+Total Time ................................ 0m 26s
+--------------------------------------------------
+Material: MDF
+Use Extraction
+--------------------------------------------------
+START
+'(PART_011)
+%
+
+:0011
+N10 (PROGRAM PRODUCED  - 26 OCT 20)
+N20 G90 G71
+N30 G40 G80
+'(OP 1   FINISH PASS   TOOL 1   FLAT - 2MM)
+'(EFFECTIVE DIAMETER 2)
+N40 T0101 M03        'Select tool and offset
+N50 S24000 H01 M06       'Next tool is 00, Next XY is 766., 668.
+N60 G0  X766. Y668.  
+N70 G43 Z0. H01 M09
+DN
+N80 G1 Y1218. F9600
+N90 X2.
+N100 Y668.
+N110 X766.
+UP
+N120 M09
+N130 M30
+%
